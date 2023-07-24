@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 1300px;
+  height: 800px;
+  margin: 0 auto;
+  /* background-color: dodgerblue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.card2 {
+  height: 550px;
+  width: 250px;
+  /* background-color: rgb(0, 255, 166); */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  animation-name: bakr;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+.card3 {
+  height: 650px;
+  width: 150px;
+  /* background-color: rgb(128, 0, 119); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card4 {
+  height: 800px;
+  width: 150px;
+  /* background-color: rgb(128, 81, 0); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card5 {
+  height: 650px;
+  width: 150px;
+  /* background-color: rgb(128, 0, 0); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card6 {
+  height: 550px;
+  width: 250px;
+  /* background-color: rgb(0, 0, 0); */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  animation-name: abu;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes abu {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-130px);
+  }
+}
+
+@keyframes bakr {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(130px);
+  }
+}
+
+
+.card__childt{
+  width: 150px;
+  height: 150px;
+  /* background-color: #ffffff57; */
+  animation-name: go;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  /* animation-direction: reverse; */
+  /* animation-iteration-count: infinite; */
+
+
+}
+
+.card__childb{
+    width: 150px;
+    height: 150px;
+    /* background-color: #ffffff57; */
+    animation-name: go2;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    /* animation-iteration-count: infinite; */
+  }
+
+
+  img{
+    width: 150px;
+    height: 150px;
+  }
+
+
+
+@keyframes go {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(100px);   
+    }
+}
+
+
+@keyframes go2{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-100px);   
+    }
+}
+
